@@ -69,24 +69,24 @@ header {
 	position: fixed;
 	width: 100%;
 	z-index: 10;
-	color: #fff;
 	transition: background-color 1s ease 0s;
 }
 
 header > div {
     max-width: 1920px;
     margin: auto;
+	overflow: hidden;
 }
 
 #logo {
     position: absolute;
-    top: 5px;
-    left: 40px;
-    width: 100px;
-    height: 60px;
+    margin: 10px 40px;
+    width: 66px;
+    height: 50px;
+	left: -200px;
     background: url("../images/logo.svg") no-repeat scroll center top;background-size: auto 100%;
     z-index: 10;
-    transition: all 0.2s ease 0s;
+    transition: left 0.3s ease-in-out 0s;
 }
 
 #nav {
@@ -99,17 +99,11 @@ header nav {
     align-items: center;
     width: 500px;
     height: 70px;
-    left: 190px;
-}
-
-@media only all and (max-width: 900px) {
-	header nav {
-		width: 400px;
-	}
+    margin: auto;
 }
 
 header nav a:hover, header nav a.act {
-	text-shadow: 0 0 10px #fff;
+	color: #006DB8;
 }
 
 header div.fa {
@@ -164,38 +158,40 @@ main p {
 
 main section a {
     display: inline-block;
-    color: #7D7D7D;
-    margin: 10px 30px 0 0;
+	color: #006DB8;
+    margin: 20px 30px 0 0;
 }
 
 main section a:hover {
-    background-color: #7D7D7D;
+    background-color: #006DB8;
     color: #fff;
 }
 
 #page1 {
     background: url(../images/back1.jpg) no-repeat left center;
-}
-
-#page1 h2 span {
-	position: absolute;
-	top: -80px;
-	font-size: 80px;
+	text-align: center;
 }
 
 #page1 section {
-    left: 55%;
-    padding: 25% 5% 100px 0;
+	width: 100%;
+	max-width: 1000px;
+	padding: 0 50px 100px;
+	margin: auto;
+}
+
+#page1 img {
+	width: 520px;
+	height: auto;
+	padding: 140px 0 80px;
+	margin: auto;
+}
+
+#page1 h2 {
+	color: #006DB8;
 }
 
 @media only all and (max-width: 1000px) {
-	#page1 section {
-		left: 5%;
-		padding: 40% 5% 20px 0;
-	}
-	#page1 section a {
-		left: 90%;
-	}
+
 }
 
 #page2 {
@@ -332,18 +328,19 @@ main section a:hover {
 }
 
 #page6 > div > div {
+	text-align: center;
     width: 400px;
     padding: 20px
 }
 
 #page6 h3 {
 	padding: 40px 0 10px;
-	font-size: 72px;
+	font-size: 62px;
 	line-height: 1;
 }
 
 #page6 h3 span {
-	color: #7D7D7D;
+	color: #006DB8;
 }
 
 #page6 p {
